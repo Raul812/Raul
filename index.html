@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>你的名字 - 个人主页</title>
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --card: #ffffff;
+      --text: #333333;
+      --muted: #666666;
+      --accent: #4f46e5;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: var(--accent);
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      color: #fff;
+      overflow: hidden;
+    }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    section {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+      color: var(--accent);
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .skill {
+      background: #eef2ff;
+      color: var(--accent);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    .projects {
+      display: grid;
+      gap: 16px;
+    }
+    .project {
+      padding: 16px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .project:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    .project h3 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+    .project p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 16px;
+    }
+    .links a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      transition: opacity 0.2s;
+    }
+    .links a:hover {
+      opacity: 0.85;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 20px 16px; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- 想用图片头像，把下面这行换成：<div class="avatar"><img src="头像.jpg" alt="头像"></div> -->
+      <div class="avatar">😀</div>
+      <h1>你的名字</h1>
+      <p class="subtitle">前端开发者 / 设计师 / 终身学习者</p>
+    </header>
+
+    <section>
+      <h2>关于我</h2>
+      <p>你好！我是一名热爱编程和设计的开发者，喜欢用代码创造有趣的东西。这里是我的个人网站，记录我的项目和想法。</p>
+    </section>
+
+    <section>
+      <h2>技能</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">UI 设计</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>项目</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>项目一：个人博客</h3>
+          <p>基于 GitHub Pages 和 Jekyll 搭建的静态博客，分享技术文章。</p>
+        </div>
+        <div class="project">
+          <h3>项目二：待办清单</h3>
+          <p>一个简洁的 Todo List 应用，支持本地存储和拖拽排序。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>联系我</h2>
+      <div class="links">
+        <a href="mailto:your@email.com">📧 邮箱</a>
+        <a href="https://github.com/你的用户名" target="_blank">🐙 GitHub</a>
+        <a href="https://twitter.com/你的用户名" target="_blank">🐦 Twitter</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> 你的名字. 保留所有权利.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
