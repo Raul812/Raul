@@ -1,22 +1,17 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="RAUL 的思考与记录：数字生活、AI、法律与产品。">
+<meta name="description" content="RAUL 的思考与记录">
 <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#f4f4f1" media="(prefers-color-scheme: light)">
 <title>Notes · RAUL</title>
 <link rel="canonical" href="https://你的用户名.github.io/notes.html">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Notes · RAUL">
-<meta property="og:description" content="不是为了教别人什么，只是把一些想明白的、没想明白的东西留下来。">
-<meta property="og:url" content="https://你的用户名.github.io/notes.html">
-<meta property="og:image" content="https://你的用户名.github.io/assets/og-cover.jpg">
-<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="css/style.css">
 <script>(function(){try{var t=localStorage.getItem("theme");var l=t==="light"||(!t&&window.matchMedia("(prefers-color-scheme: light)").matches);if(l)document.documentElement.classList.add("light");document.documentElement.style.colorScheme=l?"light":"dark";}catch(e){}})();</script>
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要内容</a>
@@ -38,40 +33,24 @@
 </header>
 
 <main id="main" class="page container">
-  <div class="page-intro">
-    <p class="eyebrow">笔记</p>
-    <h1>思考<br><em>与记录</em></h1>
-    <p class="lead">不是为了教别人什么，只是把一些想明白的、没想明白的东西留下来。</p>
+
+  <!-- 列表视图（无 ?id= 时显示） -->
+  <div id="notes-list-view">
+    <div class="page-intro">
+      <p class="eyebrow">笔记</p>
+      <h1>思考<br><em>与记录</em></h1>
+      <p class="lead">不是为了教别人什么，只是把一些想明白的、没想明白的东西留下来。</p>
+    </div>
+    <div class="note-list" id="note-list">
+      <div class="empty-note">正在加载…</div>
+    </div>
   </div>
 
-  <div class="note-list">
-    <article class="note-item" id="devices">
-      <div class="note-date">2026.09</div>
-      <div>
-        <span class="tag">DIGITAL LIFE</span>
-        <h2>为什么手机正在失去越来越多的「可拆卸」设计？</h2>
-        <p>可拆卸电池、3.5mm 耳机孔、SD 卡、刷机 ROM……以前手机拥有的自由，为什么逐渐消失？</p>
-      </div>
-    </article>
-    <article class="note-item" id="creator">
-      <div class="note-date">2026.09</div>
-      <div>
-        <span class="tag">AI</span>
-        <h2>AI 时代，个人内容创作者还会存在吗？</h2>
-        <p>当生成图片、视频和文字的成本越来越低，真正稀缺的东西可能不再是“生产能力”。</p>
-      </div>
-    </article>
-    <article class="note-item" id="justice">
-      <div class="note-date">2026.09</div>
-      <div>
-        <span class="tag">LAW × AI</span>
-        <h2>如果 AI 可以参与司法审查，会发生什么？</h2>
-        <p>从证据审查、多模型交叉验证，到程序正义与人的最终决定权。</p>
-      </div>
-    </article>
+  <!-- 文章视图（带 ?id= 时显示） -->
+  <div id="notes-article-view" hidden>
+    <article id="note-article"></article>
   </div>
 
-  <div class="empty-note">更多内容正在写。</div>
 </main>
 
 <footer class="footer container">
@@ -85,6 +64,7 @@
   </div>
 </footer>
 
+<script src="js/notes.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
