@@ -3,7 +3,6 @@
    Version: 1.3 · 2026.09
    ========================================================= */
 
-/* ---------- 设计变量 ---------- */
 :root{
   --bg:#0a0a0a;
   --surface:#111111;
@@ -32,7 +31,6 @@
   color-scheme:light;
 }
 
-/* ---------- 基础重置 ---------- */
 *,*::before,*::after{box-sizing:border-box}
 
 html{
@@ -57,7 +55,6 @@ img,svg,video{display:block;max-width:100%;height:auto}
 button{font:inherit;color:inherit}
 ::selection{background:var(--text);color:var(--bg)}
 
-/* ---------- 无障碍 ---------- */
 .skip-link{
   position:absolute;
   top:-64px;
@@ -88,7 +85,6 @@ button{font:inherit;color:inherit}
   }
 }
 
-/* ---------- 布局 ---------- */
 .container{
   width:min(calc(100% - 48px),var(--max));
   margin-inline:auto;
@@ -96,7 +92,6 @@ button{font:inherit;color:inherit}
 
 .muted{color:var(--muted)}
 
-/* ---------- 导航 ---------- */
 .nav-wrap{
   position:sticky;
   top:0;
@@ -158,7 +153,6 @@ button{font:inherit;color:inherit}
 
 .menu-btn{display:none}
 
-/* ---------- Hero ---------- */
 .hero{padding:150px 0 170px}
 
 .eyebrow,.tag{
@@ -229,7 +223,6 @@ button{font:inherit;color:inherit}
 .text-link:hover,
 .section-head a:hover{color:var(--text)}
 
-/* ---------- 区块标题 ---------- */
 .section-head{
   display:flex;
   justify-content:space-between;
@@ -239,7 +232,6 @@ button{font:inherit;color:inherit}
   padding-bottom:14px;
 }
 
-/* ---------- 当前状态 ---------- */
 .status-section{padding-bottom:150px}
 
 .status-grid{
@@ -282,7 +274,6 @@ button{font:inherit;color:inherit}
   margin:0;
 }
 
-/* ---------- 精选项目 ---------- */
 .split-section{
   display:grid;
   grid-template-columns:1fr 1.6fr;
@@ -329,7 +320,6 @@ button{font:inherit;color:inherit}
   transform:translate(2px,-2px);
 }
 
-/* ---------- 最近笔记 ---------- */
 .notes-preview{padding-bottom:120px}
 
 .notes-grid{
@@ -355,7 +345,6 @@ button{font:inherit;color:inherit}
   margin:35px 0 12px;
 }
 
-/* ---------- 页脚 ---------- */
 .footer{
   display:flex;
   justify-content:space-between;
@@ -377,7 +366,6 @@ button{font:inherit;color:inherit}
   align-items:flex-start;
 }
 
-/* ---------- 内页通用 ---------- */
 .page{padding:100px 0 140px}
 
 .page-intro{padding-bottom:100px}
@@ -432,7 +420,6 @@ button{font:inherit;color:inherit}
   margin:0;
 }
 
-/* ---------- 项目页 ---------- */
 .big-project{
   border-top:1px solid var(--line);
   padding:55px 0 75px;
@@ -467,7 +454,6 @@ button{font:inherit;color:inherit}
   color:var(--muted);
 }
 
-/* ---------- 笔记列表 ---------- */
 .note-list{border-top:1px solid var(--line)}
 
 .note-item{
@@ -504,7 +490,6 @@ button{font:inherit;color:inherit}
   padding:70px;
 }
 
-/* ---------- 单篇笔记正文 ---------- */
 .article-head{
   padding-bottom:40px;
   border-bottom:1px solid var(--line);
@@ -536,6 +521,12 @@ button{font:inherit;color:inherit}
   color:var(--text);
 }
 .article-body p{margin:0 0 1.4em}
+.article-body h1{
+  font-size:clamp(28px,4vw,40px);
+  line-height:1.2;
+  letter-spacing:-.02em;
+  margin:1.6em 0 .6em;
+}
 .article-body h2{
   font-size:26px;
   line-height:1.3;
@@ -591,7 +582,6 @@ button{font:inherit;color:inherit}
   border-top:1px solid var(--line);
 }
 
-/* ---------- 实验室页 ---------- */
 .lab-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -627,7 +617,6 @@ button{font:inherit;color:inherit}
   border-bottom:1px solid var(--line);
 }
 
-/* ---------- Now 页 ---------- */
 .now-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -646,7 +635,6 @@ button{font:inherit;color:inherit}
   margin:28px 0 8px;
 }
 
-/* ---------- 移动端 ---------- */
 @media (max-width:760px){
   .container{width:min(calc(100% - 32px),var(--max))}
 

@@ -44,14 +44,11 @@
 
 ## 部署前必须替换的内容
 
-- `your@email.com` → 你的真实邮箱（本项目已设为 `1183855213@qq.com`）
 - `你的用户名.github.io` → 你的实际 GitHub Pages 域名
 - `assets/og-cover.jpg` → 实际社交分享图（建议 1200×630）
 - `assets/favicon.svg` → 实际站点图标
 
 ## 写笔记的工作流
-
-这是整个网站最核心的部分。以后你只需要做三件事：
 
 1. 在 `notes/` 里新建一个 `.md` 文件，例如：
 

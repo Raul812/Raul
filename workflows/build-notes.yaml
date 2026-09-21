@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'notes/**.md'
+      - 'notes/**.markdown'
       - 'scripts/build-notes.js'
       - '.github/workflows/build-notes.yml'
   workflow_dispatch:

@@ -6,7 +6,6 @@
   var navLinks = document.querySelector(".nav-links");
   var themeBtn = document.querySelector(".theme-btn");
 
-  /* ---------- 移动端菜单 ---------- */
   function closeMenu() {
     if (!navLinks || !menuBtn) return;
     navLinks.classList.remove("open");
@@ -35,7 +34,6 @@
     });
   }
 
-  /* ---------- 主题切换 ---------- */
   function isLight() {
     return root.classList.contains("light");
   }
@@ -52,13 +50,9 @@
     themeBtn.addEventListener("click", function () {
       root.classList.toggle("light");
       var light = isLight();
-
       try {
         localStorage.setItem("theme", light ? "light" : "dark");
-      } catch (e) {
-        /* 忽略隐私模式等异常 */
-      }
-
+      } catch (e) {}
       root.style.colorScheme = light ? "light" : "dark";
       syncThemeBtn();
     });
