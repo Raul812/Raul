@@ -16,7 +16,7 @@
 - `now.html` — 当前状态
 - `css/style.css` — 网站样式
 - `js/main.js` — 菜单与深浅色切换
-- `assets/` — 图片等资源
+- `assets/` — 图片、favicon 等资源
 
 ## 部署到 GitHub Pages
 
@@ -37,6 +37,25 @@
 
 `https://你的用户名.github.io/`
 
+## 部署前必须替换的内容
+
+在全部 HTML 文件中全局搜索并替换：
+
+- `your@email.com` → 你的真实邮箱
+- `你的用户名.github.io` → 你的实际 GitHub Pages 域名
+- `assets/og-cover.jpg` → 实际社交分享图（建议 1200×630）
+- `assets/favicon.svg` → 实际站点图标
+
+## 网站特性
+
+- 深色 / 浅色主题切换
+- 首次访问自动跟随系统主题
+- 主题偏好保存在 localStorage，刷新不闪烁
+- 移动端自适应导航
+- 键盘导航友好（Tab / Esc / focus-visible）
+- 支持 `prefers-reduced-motion`
+- 基础 SEO（canonical / Open Graph / Twitter Card）
+
 ## 修改网站内容
 
 以后主要修改这些地方：
@@ -45,6 +64,7 @@
 - 关于页 `about.html`
 - 项目页 `projects.html`
 - 笔记页 `notes.html`
+- 实验室 `lab.html`
 - 当前状态 `now.html`
 - 图片放进 `assets/`
 
@@ -72,21 +92,19 @@
 
 后续可以继续增加：
 
-- Markdown 博客
+- Markdown 博客（推荐 Astro / Eleventy）
 - GitHub 项目自动读取
 - RSS
-- 网站访问统计
+- 网站访问统计（如 Plausible / Umami）
 - 中英文切换
-- 自定义域名
+- 自定义域名（记得加 `CNAME`）
 - 个人头像
-- 项目图片
+- 项目图片与截图
 - 时间线
-- 更丰富的页面动画
+- `sitemap.xml` / `robots.txt` / `404.html`
 
-## 当前版本
+## 版本
 
-版本：`1.1`
-
+版本：`1.2`
 更新时间：`2026.09`
-
 名称：**RAUL**

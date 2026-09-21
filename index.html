@@ -1,79 +1,138 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="RAUL的个人网站：电商运营、AI、数字生活与个人思考。">
-  <title>RAUL · 电商运营 · AI · 数字生活</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="RAUL 的个人网站：电商运营、AI、数字生活与个人思考。">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4f4f1" media="(prefers-color-scheme: light)">
+<title>RAUL · 电商运营 · AI · 数字生活</title>
+<link rel="canonical" href="https://你的用户名.github.io/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RAUL · 电商运营 · AI · 数字生活">
+<meta property="og:description" content="记录正在做的事情、正在研究的问题，以及一些还没有答案的想法。">
+<meta property="og:url" content="https://你的用户名.github.io/">
+<meta property="og:image" content="https://你的用户名.github.io/assets/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="css/style.css">
+<script>(function(){try{var t=localStorage.getItem("theme");var l=t==="light"||(!t&&window.matchMedia("(prefers-color-scheme: light)").matches);if(l)document.documentElement.classList.add("light");document.documentElement.style.colorScheme=l?"light":"dark";}catch(e){}})();</script>
 </head>
 <body>
-  <header class="nav-wrap">
-    <nav class="nav container">
-      <a class="brand" href="index.html">RAUL<span>.</span></a>
-      <button class="menu-btn" aria-label="打开菜单" aria-expanded="false">☰</button>
-      <div class="nav-links">
-        <a class="active" href="index.html">首页</a>
-        <a href="about.html">关于</a>
-        <a href="projects.html">项目</a>
-        <a href="notes.html">笔记</a>
-        <a href="lab.html">实验室</a>
-        <a href="now.html">现在</a>
-      </div>
-      <button class="theme-btn" aria-label="切换主题">◐</button>
-    </nav>
-  </header>
+<a class="skip-link" href="#main">跳到主要内容</a>
 
-  <main>
-    <section class="hero container">
-      <p class="eyebrow">HUANG RAUL · 2026</p>
-      <h1>正在构建、探索<br><em>与记录。</em></h1>
-      <p class="hero-copy">电商运营 · AI · 数字生活</p>
-      <p class="hero-desc">记录正在做的事情、正在研究的问题，以及一些还没有答案的想法。</p>
-      <div class="actions">
-        <a class="btn primary" href="projects.html">查看项目 <span>↗</span></a>
-        <a class="text-link" href="notes.html">阅读笔记 →</a>
-      </div>
-    </section>
+<header class="nav-wrap">
+  <nav class="nav container" aria-label="主导航">
+    <a class="brand" href="index.html">RAUL<span aria-hidden="true">.</span></a>
+    <button class="menu-btn" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="site-nav">☰</button>
+    <div class="nav-links" id="site-nav">
+      <a href="index.html" aria-current="page">首页</a>
+      <a href="about.html">关于</a>
+      <a href="projects.html">项目</a>
+      <a href="notes.html">笔记</a>
+      <a href="lab.html">实验室</a>
+      <a href="now.html">现在</a>
+    </div>
+    <button class="theme-btn" type="button" aria-label="切换主题" aria-pressed="false">◐</button>
+  </nav>
+</header>
 
-    <section class="status-section container">
-      <div class="section-head">
-        <span class="eyebrow">当前状态</span>
+<main id="main">
+  <section class="hero container">
+    <p class="eyebrow">HUANG RAUL · 2026</p>
+    <h1>正在构建、探索<br><em>与记录。</em></h1>
+    <p class="hero-copy">电商运营 · AI · 数字生活</p>
+    <p class="hero-desc">记录正在做的事情、正在研究的问题，以及一些还没有答案的想法。</p>
+    <div class="actions">
+      <a class="btn primary" href="projects.html">查看项目 <span aria-hidden="true">↗</span></a>
+      <a class="text-link" href="notes.html">阅读笔记 →</a>
+    </div>
+  </section>
+
+  <section class="status-section container">
+    <div class="section-head">
+      <span class="eyebrow">当前状态</span>
+      <span class="muted">2026.09</span>
+    </div>
+    <div class="status-grid">
+      <article class="status-card">
+        <span class="status-dot" aria-hidden="true"></span><span class="tag">工作ING</span>
+        <h3>电商运营</h3>
+        <p>店铺运营 · 商品 · 投放 · 数据</p>
+      </article>
+      <article class="status-card">
+        <span class="status-dot" aria-hidden="true"></span><span class="tag">探索</span>
+        <h3>个人 AI</h3>
+        <p>个人智能助手 · 人机交互</p>
+      </article>
+      <article class="status-card">
+        <span class="status-dot" aria-hidden="true"></span><span class="tag">实验</span>
+        <h3>AI 内容</h3>
+        <p>AI 视频 · 视觉内容 · 故事</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="container split-section">
+    <div>
+      <p class="eyebrow">精选项目</p>
+      <h2>正在<br>working on.</h2>
+    </div>
+    <div class="project-list">
+      <a class="project-row" href="projects.html#personal-ai">
+        <span>01</span>
+        <div><h3>个人 AI</h3><p>关于个人 AI、智能穿戴与未来个人助手的长期探索。</p></div>
+        <b aria-hidden="true">↗</b>
+      </a>
+      <a class="project-row" href="projects.html#ai-content">
+        <span>02</span>
+        <div><h3>AI 内容</h3><p>尝试使用 AI 制作短视频、视觉内容与第一视角故事。</p></div>
+        <b aria-hidden="true">↗</b>
+      </a>
+      <a class="project-row" href="projects.html#ecommerce">
+        <span>03</span>
+        <div><h3>电商运营系统</h3><p>把实际电商运营经验整理成自己的知识体系。</p></div>
+        <b aria-hidden="true">↗</b>
+      </a>
+    </div>
+  </section>
+
+  <section class="container notes-preview">
+    <div class="section-head">
+      <span class="eyebrow">最近笔记</span>
+      <a href="notes.html">查看全部 →</a>
+    </div>
+    <div class="notes-grid">
+      <a class="note-card" href="notes.html#devices">
         <span class="muted">2026.09</span>
-      </div>
-      <div class="status-grid">
-        <article class="status-card"><span class="status-dot"></span><span class="tag">工作ING</span><h3>电商运营</h3><p>店铺运营 · 商品 · 投放 · 数据</p></article>
-        <article class="status-card"><span class="status-dot"></span><span class="tag">探索</span><h3>个人 AI</h3><p>个人智能助手 · 人机交互</p></article>
-        <article class="status-card"><span class="status-dot"></span><span class="tag">实验</span><h3>AI 内容</h3><p>AI 视频 · 视觉内容 · 故事</p></article>
-      </div>
-    </section>
+        <h3>为什么手机正在失去越来越多的「可拆卸」设计？</h3>
+        <p>从电池、SD 卡、3.5mm 耳机孔到刷机 ROM。</p>
+      </a>
+      <a class="note-card" href="notes.html#creator">
+        <span class="muted">2026.09</span>
+        <h3>AI 时代，个人内容创作者还会存在吗？</h3>
+        <p>当内容生产成本越来越低，个人的价值会发生什么变化。</p>
+      </a>
+      <a class="note-card" href="notes.html#justice">
+        <span class="muted">2026.09</span>
+        <h3>如果 AI 可以参与司法审查，会发生什么？</h3>
+        <p>关于证据、程序、交叉审查与人的最终决定权。</p>
+      </a>
+    </div>
+  </section>
+</main>
 
-    <section class="container split-section">
-      <div>
-        <p class="eyebrow">精选项目</p>
-        <h2>正在<br>working on.</h2>
-      </div>
-      <div class="project-list">
-        <a class="project-row" href="projects.html#personal-ai"><span>01</span><div><h3>个人 AI</h3><p>关于个人 AI、智能穿戴与未来个人助手的长期探索。</p></div><b>↗</b></a>
-        <a class="project-row" href="projects.html#ai-content"><span>02</span><div><h3>AI 内容</h3><p>尝试使用 AI 制作短视频、视觉内容与第一视角故事。</p></div><b>↗</b></a>
-        <a class="project-row" href="projects.html#ecommerce"><span>03</span><div><h3>电商运营系统</h3><p>把实际电商运营经验整理成自己的知识体系。</p></div><b>↗</b></a>
-      </div>
-    </section>
+<footer class="footer container">
+  <div>
+    <strong>RAUL.</strong>
+    <p>电商运营 · AI · 数字生活</p>
+  </div>
+  <div class="footer-right">
+    <span>© 2026 RAUL</span>
+    <a href="mailto:your@email.com">邮箱 ↗</a>
+  </div>
+</footer>
 
-    <section class="container notes-preview">
-      <div class="section-head"><span class="eyebrow">最近笔记</span><a href="notes.html">查看全部 →</a></div>
-      <div class="notes-grid">
-        <a class="note-card" href="notes.html#devices"><span>2026.09</span><h3>为什么手机正在失去越来越多的「可拆卸」设计？</h3><p>从电池、SD 卡、3.5mm 耳机孔到刷机 ROM。</p></a>
-        <a class="note-card" href="notes.html#creator"><span>2026.09</span><h3>AI 时代，个人内容创作者还会存在吗？</h3><p>当内容生产成本越来越低，个人的价值会发生什么变化。</p></a>
-        <a class="note-card" href="notes.html#justice"><span>2026.09</span><h3>如果 AI 可以参与司法审查，会发生什么？</h3><p>关于证据、程序、交叉审查与人的最终决定权。</p></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer container">
-    <div><strong>RAUL.</strong><p>电商运营 · AI · 数字生活</p></div>
-    <div class="footer-right"><span>© 2026 RAUL</span><a href="mailto:your@email.com">邮箱 ↗</a></div>
-  </footer>
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
