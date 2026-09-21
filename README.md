@@ -1,4 +1,4 @@
-# RAUL · 个人网站
+﻿# RAUL · 个人网站
 
 这是 RAUL 的个人网站项目。
 
@@ -41,7 +41,7 @@
 
 在全部 HTML 文件中全局搜索并替换：
 
-- `your@email.com` → 你的真实邮箱
+- `1183855213@qq.com` → 你的真实邮箱
 - `你的用户名.github.io` → 你的实际 GitHub Pages 域名
 - `assets/og-cover.jpg` → 实际社交分享图（建议 1200×630）
 - `assets/favicon.svg` → 实际站点图标
