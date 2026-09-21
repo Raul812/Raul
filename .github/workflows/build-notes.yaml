@@ -2,7 +2,7 @@ name: Build Notes Index
 
 on:
   push:
-    branches: [main]
+分支: [master]
     paths:
       - 'notes/**.md'
       - 'notes/**.markdown'
