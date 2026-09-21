@@ -27,7 +27,7 @@
 
 1. 在 GitHub 创建一个仓库。
 2. 将本项目所有文件上传到仓库根目录。
-3. 打开仓库的 `Settings`。
+3. 打开仓库的 `设置`。
 4. 进入 `Pages`。
 5. 在 `Build and deployment` 中选择 `Deploy from a branch`。
 6. Branch 选择 `main`，目录选择 `/ (root)`。
@@ -55,3 +55,23 @@
    `notes/2026-10-01-my-thoughts.md`
 
 2. 文件开头写 frontmatter：
+
+3. 把头像、项目图片、favicon、og-cover 等资源放在这里。
+建议目录结构：
+assets/
+  avatar.webp
+  favicon.svg
+  og-cover.jpg
+  projects/
+    project-01.webp
+    project-02.webp
+
+建议：
+- 图片使用 WebP 或 AVIF 格式
+- 图片加上 width / height / loading="lazy" / alt
+- 封面图建议尺寸 1200×630（用于社交分享）
+
+版本：
+版本：1.3
+更新时间：2026.09
+名称：RAUL
