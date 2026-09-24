@@ -142,7 +142,7 @@
           return;
         }
 
-        document.title = note.title + " · RAUL";
+        document.title = note.title + " · 路啊同学";
 
         return fetchText(note.file).then(function (text) {
           var parsed = parseFrontmatter(text);
